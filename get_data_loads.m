@@ -61,7 +61,7 @@ function data_loads = get_data_loads()
 	data_load.indexes.tib_esq = 2;			#12
 	data_load.indexes.joe_esq = 11;			#13
 	data_load.indexes.tro_esq = 15;			#14
-	data_load.cut_begin = 350;
+	data_load.cut_begin = 400;
 	data_load.cut_end = 400;
 	data_loads = [data_loads; data_load];
 

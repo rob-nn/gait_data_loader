@@ -29,7 +29,7 @@ function training_set = clean_data(data_load)
 	origin = [x, y, z];
 	[x, y, z] = get_data_point(data_points, find(points == indexes.tib_dir));
 	points2 = [x, y, z];
-	[av_right, angles_right, aa_right] = calc_ang_v(points1, origin, points2, sample_time);
+	[av_right, angles_right, aa_right, vxyz_right] = calc_ang_v(points1, origin, points2, sample_time);
 
 
 
@@ -40,8 +40,8 @@ function training_set = clean_data(data_load)
 	origin = [x, y, z];
 	[x, y, z] = get_data_point(data_points, find(points == indexes.tib_esq));
 	points2 = [x, y, z];
-	[av_left, angles_left, aa_left] = calc_ang_v(points1, origin, points2, sample_time);
+	[av_left, angles_left, aa_left, vxyz_left] = calc_ang_v(points1, origin, points2, sample_time);
 
 
-	training_set = [av_left, av_right, angles_left, angles_right, aa_left, aa_right];
+	training_set = [av_left, av_right, angles_left, angles_right, aa_left, aa_right, vxyz_left, vxyz_right];
 end;
