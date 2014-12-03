@@ -4,8 +4,7 @@
 ## training_set format 4 x samples
 ## 4 = angular velocities and angles from left and right legs
 ## samples colected 
-function training_set = clean_data(data_load)
-
+function training_set = clean_data_calculate(data_load)
 
 	delete_init = data_load.cut_begin;
 	delete_end = data_load.cut_end;
