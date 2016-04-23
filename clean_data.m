@@ -38,7 +38,7 @@ function training_set = clean_data(data_load)
 	[x, y, z] = get_data_point(data_points, find(points == indexes.tro_esq));
 	points2 = [x, y, z];
 
-data_points(5,:,:)
+data_points(5,:,:);
 	[x, y, z] = get_data_point(data_points, find(points == indexes.joe_esq));
 	origin = [x, y, z];
 #origin
